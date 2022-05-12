@@ -1,5 +1,5 @@
 /* 
- * Task #1 Bare Bones Threading-Restuarant
+ * Task #2 More Combos Threading-Restuarant
  * Author: Grant Ogden 
  */
 #include <iostream>
