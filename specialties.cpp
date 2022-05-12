@@ -242,7 +242,7 @@ void grill_worker() {
     {
         if(burgers_needed > 0)
         {
-            this_thread::sleep_for(chrono::milliseconds(FRYER_TIME));
+            this_thread::sleep_for(chrono::milliseconds(GRILL_TIME));
             burgers.lock();
             burgers_needed -= 4;
             burgers_ready += 4;
