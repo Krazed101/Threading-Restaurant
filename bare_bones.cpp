@@ -16,16 +16,17 @@ using namespace std;
 void error(string err_msg);
 void worker();
 
-// A queue that holds all the orders that need to be done.
+//A queue that holds all the orders that need to be done.
 queue<char> orders;
 
-// Mutex for the orders queue so multiple threads don't pop at the same time.
+//Mutex for the orders queue so multiple threads don't pop at the same time.
 mutex orders_mutex;
 
 int main(int argc, char const *argv[])
 {
     size_t num_threads = 1;     //The Number of threads. At least one just so everything gets done incase of error.
     queue<thread> threads;      //Queue of threads so that we can join them all in the end.
+
     cout << "Welcome to Ogden's Bare Bones Burger Shop\n";
     cout << "-----------------------------------------\n";
 
